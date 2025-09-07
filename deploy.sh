@@ -15,8 +15,8 @@ pm2 start index.js --deep-monitoring --attach --name BILAL-MD
 # Changes ko private repository mein push karne ke liye
 git init
 git remote add origin https://${TOKEN}@github.com/BilalTech05/BILAL-MD.git
-git config --global user.email ""
-git config --global user.name "Your Name"
+git config --global user.email "jomeh40972@certve.com"
+git config --global user.name "BILAL"
 git add .
 git commit -m "Update files"
 git push -f origin master
