@@ -22,7 +22,10 @@ rm -rf BILAL-MD
 
 # Node version specify karna
 echo "Adding Node.js version to package.json"
-jq '.engines = {"node": ">=16.x"}' package.json > temp.json && mv temp.json package.json
+echo "{\"engines\": {\"node\": \"16.x\"}}" > temp.json
+jq '.engines = {"node": "16.x"}' package.json > temp2.json
+mv temp2.json package.json
+rm temp.json
 
 # Node application ko start karne ke liye
 npm install
