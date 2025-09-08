@@ -10,7 +10,7 @@
     "SESSION_ID": {
       "description": "AP NE PAIR YA QR CODE SE WHATSAPP LINK KIA HOGA TO APKE PAS WHATSAPP PER EK CODE AYA HOGA AP WO CODE WHATSAPP SE COPY KAR KE YAHA NICHE BOX ME PASTE KARE",
       "required": true,
-      "value": ""
+      "value": "BILAL-MD~TV0DVI4L#ljoO7_u1rDayeqqXB4n5x6iqBuO2CrfA5ePjEUYPZkc"
     },  
     
     "STICKER_NAME": {
@@ -92,7 +92,7 @@
     "OWNER_NUMBER": {
       "description": "BOT USER KA WHATSAPP NUMBER NICHE LIKHO YAAD RAHE BOT KE SAB COMMANDS SIRF YEH NUMBER HI USE KAR PAYE GA BAKII KOI AUR SAB COMMANDS USE NAHI KAR PAYE GA OK",
       "required": false,
-      "value": "92310344XXXX"
+      "value": "963998179653"
 
     }, 
 
