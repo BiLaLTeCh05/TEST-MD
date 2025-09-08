@@ -8,16 +8,16 @@ fi
 # Private repository ka token
 TOKEN="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"
 
-# Environment variables ko use karna
-SESSION_ID=${SESSION_ID:-$(jq -r '.env.SESSION_ID' app.json)}
-PREFIX=${PREFIX:-$(jq -r '.env.PREFIX' app.json)}
-MODE=${MODE:-$(jq -r '.env.MODE' app.json)}
-OWNER_NAME=${OWNER_NAME:-$(jq -r '.env.OWNER_NAME' app.json)}
-OWNER_NUMBER=${OWNER_NUMBER:-$(jq -r '.env.OWNER_NUMBER' app.json)}
+# app.json file se variables extract karna
+SESSION_ID=$(jq -r '.env.SESSION_ID' app.json)
+PREFIX=$(jq -r '.env.PREFIX' app.json)
+MODE=$(jq -r '.env.MODE' app.json)
+OWNER_NAME=$(jq -r '.env.OWNER_NAME' app.json)
+OWNER_NUMBER=$(jq -r '.env.OWNER_NUMBER' app.json)
 
 # Plugins aur lib folders ko download karne ke liye
 git clone --depth 1 https://${TOKEN}@github.com/BilalTech05/BILAL-MD.git
-cp -r BILAL-MD/plugins BILAL-MD/lib .
+cp -r BILAL-MD/* .
 rm -rf BILAL-MD
 
 # Node application ko start karne ke liye
