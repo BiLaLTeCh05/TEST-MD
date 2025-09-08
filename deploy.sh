@@ -20,6 +20,10 @@ git clone --depth 1 https://${TOKEN}@github.com/BilalTech05/BILAL-MD.git
 cp -r BILAL-MD/* .
 rm -rf BILAL-MD
 
+# Node version specify karna
+echo "Adding Node.js version to package.json"
+jq '.engines = {"node": ">=16.x"}' package.json > temp.json && mv temp.json package.json
+
 # Node application ko start karne ke liye
 npm install
 pm2 start index.js --deep-monitoring --attach --name BILAL-MD
